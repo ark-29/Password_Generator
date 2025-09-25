@@ -33,7 +33,7 @@ if choice=="Custom":
         if "@" in email:
             first_name=email.split("@")[0]
             domain=email.split("@")[1]
-            if domain in ["gmail.com","yahoo.com","outlook.com","raghuenggcollege.in"]:
+            if domain in ["gmail.com","yahoo.com","outlook.com",".in"]:
                 password=first_name[:6:]
                 password+='_'
                 for i in range(6):
@@ -48,3 +48,4 @@ if choice=="Custom":
             st.error("enter a valid mail")
 
         
+
