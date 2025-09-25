@@ -1,7 +1,6 @@
 import streamlit as st
 import random 
 import string
-import pyperclip
 
 
 st.markdown(""" 
@@ -24,9 +23,6 @@ if choice=="Random":
             col1,col2=st.columns([8,1.25])
             with col1:
                 st.success(password)
-            with col2:
-                pyperclip.copy(password)
-                st.info("Copied!")
 
 
 if choice=="Custom":
@@ -45,11 +41,10 @@ if choice=="Custom":
                 col1,col2=st.columns([8,1.25])
                 with col1:
                     st.success(password)
-                with col2:
-                    pyperclip.copy(password)
-                    st.info("Copied!")
+                
             else:
                 st.error("Enter a valid mail")
         elif "@" not in email:
             st.error("enter a valid mail")
+
         
