@@ -5,7 +5,7 @@ import string
 
 st.markdown(""" 
             <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Barrio&family=Bitcount+Single+Ink:wght@100..900&family=Fascinate&display=swap" rel="stylesheet">
-            <h1 style='font-family:"Audiowide";color:white'>Password Generator</h1>
+            <h1 style='font-family:"Audiowide";color:purple'>Password Generator</h1>
             """,unsafe_allow_html=True)
         
 st.header("     ")
@@ -48,4 +48,5 @@ if choice=="Custom":
             st.error("enter a valid mail")
 
         
+
 
